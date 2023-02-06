@@ -1,12 +1,6 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Oct 27 11:28:17 2021
-
-@author: keira
-"""
-
 import numpy as np
 import matplotlib.pyplot as plt
+import pandas as pd 
 
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
@@ -92,13 +86,27 @@ np.random.seed(2)
 '''
 Data pre-processing
 '''
+# Import data
+#data = np.loadtxt('x.csv', delimiter = ',', skiprows=1)
 
 # Import data
-data = np.loadtxt('data.csv', delimiter = ',')
+#data = np.loadtxt('data_nohead.csv', delimiter = ',',skiprows=1)
+data = np.genfromtxt('data_.csv', delimiter = ',', skip_header=1, filling_values=0)
 
-myy = data[:,0]
-X = data[:,1:25]
+print("data")
+print(type(data))
+print(data.shape)
+print("myy")
+myy = data[:,26]
+print(type(myy))
+print(myy)
+print("labels")
 y = data[:,25]
+print(y)
+print("data")
+X = data[:,1:25]
+print(X)
+exit(0)
 
 # Normalize X data
 normalize = StandardScaler()
