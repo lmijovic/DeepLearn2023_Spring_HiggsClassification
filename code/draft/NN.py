@@ -8,8 +8,6 @@ Created on Tue Oct  5 15:08:50 2021
 import numpy as np
 import matplotlib.pyplot as plt
 
-from atlasify import atlasify
-
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import roc_curve, auc
@@ -32,7 +30,15 @@ n = 25
 nep = 200
 
 # Import data
-data = np.loadtxt('features.csv', delimiter = ',')
+# Import data
+#data = np.loadtxt('data_nohead.csv', delimiter = ',',skiprows=1)
+data = np.genfromtxt('data.csv', delimiter = ',', skip_header=1, filling_values=0)
+
+#myy = data[:,26]
+#y = data[:,25]
+#X = data[:,1:25]
+
+#data = np.loadtxt('features.csv', delimiter = ',')
 X = data[:,:n]
 y = data[:,n]
 
@@ -67,7 +73,6 @@ plt.plot(range(1,len(loss_train)+1), loss_train, 'g', label='Training loss')
 plt.plot(range(1,len(loss_val)+1), loss_val, 'b', label='Validation loss')
 plt.xlabel('Epochs')
 plt.ylabel('Loss')
-atlasify('work in progress')
 plt.legend(frameon = False)
 plt.show()
 
@@ -80,7 +85,6 @@ plt.plot([0,1],[0,1],'r--')
 plt.text(0.8,0, 'AUC = ' + str(np.round(AUC, 5)))
 plt.xlabel('False positive rate')
 plt.ylabel('True positive rate')
-atlasify('work in progress', enlarge = 1, outside = True)
 plt.show()
 
 # Write outfile
@@ -91,5 +95,4 @@ np.savetxt('discriminant-unscaled.csv', res.T, delimiter = ',')
 # Discriminant Distribution
 plots.distribution(y_pred, y_test, xlabel = 'Discriminant', bins = 50)
 plt.yscale('log')
-atlasify('work in progress')
 plt.show()

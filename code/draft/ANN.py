@@ -91,22 +91,11 @@ Data pre-processing
 
 # Import data
 #data = np.loadtxt('data_nohead.csv', delimiter = ',',skiprows=1)
-data = np.genfromtxt('data_.csv', delimiter = ',', skip_header=1, filling_values=0)
+data = np.genfromtxt('data.csv', delimiter = ',', skip_header=1, filling_values=0)
 
-print("data")
-print(type(data))
-print(data.shape)
-print("myy")
 myy = data[:,26]
-print(type(myy))
-print(myy)
-print("labels")
 y = data[:,25]
-print(y)
-print("data")
 X = data[:,1:25]
-print(X)
-exit(0)
 
 # Normalize X data
 normalize = StandardScaler()
