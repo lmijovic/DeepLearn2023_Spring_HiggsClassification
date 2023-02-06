@@ -13,9 +13,10 @@ from keras.models import Model
 
 import layers
 
+print("keras version")
 print(keras.__version__)
+print("tensorflow version")
 print(tensorflow.__version__)
-
 
 
 def classifier(num_feat):
