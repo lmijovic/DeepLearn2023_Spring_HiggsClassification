@@ -1,6 +1,7 @@
-# Deep learning & the Higgs boson: classification with fully connected and adversarial networks
+# Deep learning & the Higgs boson: 
+# classification with fully connected and adversarial networks
 
-[introductory/intermediate] Deep learning &amp; the Higgs boson: classification with fully connected and adversarial networks.
+[introductory/intermediate]
 
 ## Summary
 
@@ -58,7 +59,7 @@ python test.py
 If you get no errors (ignore tensorflow warnings), and you get non-empty output files: clf_results.csv, ANN_results.csv, all is working fine.
 
 
-## Syllabus: 
+## Syllabus 
 
 - Lecture1: The Higgs boson and event classification
 After this lecture, you will be able to perform event classification with fully connected neural network and evaluate classification performance using Keras API.
@@ -70,7 +71,7 @@ This lecture will provide you with hands-on knowledge of manipulating neural net
 Finally, you will create an adversarial network, and compare it's classification performance to the fully connected network.
 
 
-## References: 
+## References 
 
 [1] Introduction to the Higgs boson: CERN, https://home.cern/science/physics/higgs-boson/how
 
