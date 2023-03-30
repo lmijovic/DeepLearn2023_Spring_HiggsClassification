@@ -1,4 +1,4 @@
-# Deep learning & the Higgs boson: \n classification with fully connected and adversarial networks
+# Deep learning & the Higgs boson: classification with fully connected and adversarial networks
 
 [introductory/intermediate]
 
