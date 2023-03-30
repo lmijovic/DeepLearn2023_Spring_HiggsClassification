@@ -73,5 +73,12 @@ Finally, you will create an adversarial network, and compare it's classification
 ## References: 
 
 [1] Introduction to the Higgs boson: CERN, https://home.cern/science/physics/higgs-boson/how
+
 [2] Gilles Louppe, Michael Kagan, Kyle Cranmer, Learning to Pivot with Adversarial Networks, https://arxiv.org/abs/1611.01046
+
 [3] Chase Shimmin et al, Decorrelated Jet Substructure Tagging using Adversarial Neural Networks, https://arxiv.org/abs/1703.03507
+
+
+## Credits
+
+Most of the code and ideas for these lectures are thanks to my wonderful colleagues and students: Dr. Andreas Sogaard, Dr. Emily Takeva, Keira Farmer, Jenifer Curran, Stefan Katsarov, James Cranmer. 
