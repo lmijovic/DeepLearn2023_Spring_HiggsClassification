@@ -1,5 +1,26 @@
 import pandas as pd
-import pylorentz as pl
+#import pylorentz as pl
+
+my_cols=['pt_y1','eta_y1','phi_y1','e_y1',
+         'pt_y2','eta_y2','phi_y2','e_y2',
+         'myy']
+
+
+sig=pd.read_csv('sig.csv',names=my_cols)
+bkg=pd.read_csv('bkg.csv',names=my_cols)
+
+#ensure sig/bkg label is 1/0
+sig['label']=1
+bkg['label']=0
+
+# concatenate sig & background, randomize
+data = pd.concat([sig,bkg], ignore_index=True)
+
+# randomize rows such that dataframe has uniform properties
+data = data.sample(frac=1).reset_index(drop=True)
+data.to_csv('data_.csv')
+
+exit(0)
 
 def get_mass(pt_y1, eta_y1, phi_y1, e_y1,
              pt_y2, eta_y2, phi_y2, e_y2):
