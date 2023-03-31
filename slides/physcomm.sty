@@ -1,0 +1,428 @@
+%___________________________________________________
+%LM : macro def-s
+\newcommand{\Zbos}{\ensuremath{\mathrm{Z}}}
+\newcommand{\gz}{\ensuremath{\Gamma_{\Zbos}}}
+\newcommand{\nunubar}{\ensuremath{\mathrm{\nu}\overline{\mathrm{\nu}}}}
+\newcommand{\epem}{\ensuremath{\mathrm{e}^+\mathrm{e}^-}}
+\newcommand{\qqbarnm}{\ensuremath{\mathrm{q}\overline{\mathrm{q}}}}
+\newcommand{\bbbarnm}{\ensuremath{\mathrm{b}\overline{\mathrm{b}}}}
+\newcommand{\uubarnm}{\ensuremath{\mathrm{u}\overline{\mathrm{u}}}}
+\newcommand{\ddbarnm}{\ensuremath{\mathrm{d}\overline{\mathrm{d}}}}
+
+\def\ttH{\ensuremath{\ttbar \mathrm{H}}\xspace}%
+%\def\tH{\ensuremath{\mathrm{tH}}}%
+\def\ttHb{\ensuremath{\bm \ttbar \mathrm{H}}\xspace}%
+\def\tHb{\ensuremath{\bm \mathrm{tH}}\xspace}%
+
+% ERC 
+% slides 
+\newcommand\permille{\ensuremath{{}^\text{o}\mkern-5mu/\mkern-3mu_\text{oo}}}
+
+% Z boson: 
+\newcommand{\mZ}{\ensuremath{m({\mathrm{Z}}})}
+
+\newcommand{\gZ}{\ensuremath{\Gamma_{\mathrm{Z}}}}
+
+% extra slides:
+% width macros
+\newcommand{\me}{\ensuremath{\mathcal{M}}}
+\newcommand{\amp}{\ensuremath{\mathcal{A}}}
+\newcommand{\qcd}{\ensuremath{\mathrm{QCD}}}
+
+% proposals 
+
+\newcommand{\pdyy}{Postdoc-1}
+\newcommand{\pdca}{Postdoc-2}
+\newcommand{\phdw}{PhD-1a}
+\newcommand{\phdyy}{PhD-1b}
+\newcommand{\phdca}{PhD-2}
+
+\newcommand{\br}{\ensuremath{\mathrm{BR}}}
+\newcommand{\brsm}{\ensuremath{\mathrm{BR}^{\mathrm{SM}}}}
+\newcommand{\brjsm}{\ensuremath{\mathrm{BR}^{\mathrm{SM}}_{\mathrm{j}}}}
+\newcommand{\brbsm}{\ensuremath{\mathrm{BR}^{\mathrm{BSM}}}}
+\newcommand{\brinv}{\ensuremath{\mathrm{BR}^{\mathrm{BSM}}_{\mathrm{inv}}}}
+\newcommand{\brund}{\ensuremath{\mathrm{BR}^{\mathrm{BSM}}_{\mathrm{und}}}}
+\newcommand{\kappaj}{\kappa_{\mathrm{j}}}
+
+
+\newcommand{\sigjsm}{\ensuremath{\sigma^{\mathrm{SM}}_{\mathrm{j}}}}
+\newcommand{\sigj}{\ensuremath{\sigma_{\mathrm{j}}}}
+
+\newcommand{\gamjsm}{\ensuremath{\Gamma^{\mathrm{SM}}_{\mathrm{j}}}}
+\newcommand{\gamj}{\ensuremath{\Gamma_{\mathrm{j}}}}
+
+
+
+
+\newcommand{\ee}{\ensuremath{\mathrm{e}^+\mathrm{e}^-}}
+
+\newcommand{\mh}{\ensuremath{\mathrm{m}({\mathrm{H}})}}
+
+\let\mH=\mh
+\newcommand{\mhs}{\ensuremath{\mathrm{m}({\mathrm{H}^*})}}
+\let\mHs=\mhs
+
+\newcommand{\mgamgam}{\ensuremath{m({\gamma\gamma}})}
+
+\newcommand{\gh}{\ensuremath{\Gamma_{\mathrm{H}}}}
+\newcommand{\ghb}{\ensuremath{\bm \Gamma_{\mathrm{H}}}}
+
+\newcommand{\ghsm}{\ensuremath{\Gamma_{\mathrm{H}}^{\mathrm{SM}}}}
+\newcommand{\tauh}{\ensuremath{\tau_{\mathrm{H}}}}
+\newcommand{\tauhsm}{\ensuremath{\tauh^{\mathrm{SM}}}}
+
+\newcommand{\higgs}{\ensuremath{\mathrm{H}}}
+\newcommand{\Higgs}{\ensuremath{\mathrm{H}}}
+
+\def\pT{\ifmmode{\mathrm{p_T}\xspace}\else
+  {\ensuremath{\mathrm{p_T}}\xspace}\fi}
+\let\pt=\pT
+\let\PT=\pt
+\let\Pt=\pt
+
+\newcommand{\pth}{\ensuremath{\pt(\higgs)}}
+\let\ptH=\pth
+
+\newcommand{\wh}{\ensuremath{\mathrm{WH}}}
+\newcommand{\wph}{\ensuremath{\mathrm{W}^{+}\mathrm{H}}}
+\newcommand{\wmh}{\ensuremath{\mathrm{W}^{-}\mathrm{H}}}
+\newcommand{\wpmh}{\ensuremath{\mathrm{W}^{\pm}\mathrm{H}}}
+\let\WpmH=\wpmh
+
+
+\newcommand{\uq}{\ensuremath{\mathrm{u}}}
+\newcommand{\dq}{\ensuremath{\mathrm{d}}}
+
+\newcommand{\yuk}{\ensuremath{y}}
+\newcommand{\yuku}{\ensuremath{y_{\mathrm{u}}}}
+\newcommand{\yukd}{\ensuremath{y_{\mathrm{d}}}}
+\newcommand{\yukubm}{\ensuremath{\bm{y_{\mathrm{u}}}}}
+\newcommand{\yukdbm}{\ensuremath{\bm{y_{\mathrm{d}}}}}
+\newcommand{\yuks}{\ensuremath{y_{\mathrm{s}}}}
+\newcommand{\yukc}{\ensuremath{y_{\mathrm{c}}}}
+\newcommand{\yukq}{\ensuremath{y_{\mathrm{q}}}}
+\newcommand{\yukb}{\ensuremath{y_{\mathrm{b}}}}
+\newcommand{\yukqb}{\ensuremath{y_{\mathrm{q}}/y_{\mathrm{b}}}}
+\newcommand{\yukub}{\ensuremath{y_{\mathrm{u}}/y_{\mathrm{b}}}}
+\newcommand{\yukdb}{\ensuremath{y_{\mathrm{d}}/y_{\mathrm{b}}}}
+\newcommand{\hgg}{\ensuremath{\mathrm{H}{\rightarrow}\mathrm{\gamma\gamma}}}
+\newcommand{\qgg}{\ensuremath{\mathrm{QCD}{\rightarrow}\mathrm{\gamma\gamma}}}
+\newcommand{\huu}{\ensuremath{\mathrm{H}{\rightarrow}\mathrm{u}\overline{\mathrm{u}}}}
+\newcommand{\hdd}{\ensuremath{\mathrm{H}{\rightarrow}\mathrm{d}\overline{\mathrm{d}}}}
+\newcommand{\hbb}{\ensuremath{\mathrm{H}{\rightarrow}\mathrm{b}\overline{\mathrm{b}}}}
+\newcommand{\hbbb}{\ensuremath{\bm{\mathrm{H}{\rightarrow}\mathrm{b}\overline{\mathrm{b}}}}}
+\let\Hbbb=\hbbb
+\newcommand{\gghgg}{\ensuremath{\mathrm{gg}{\rightarrow}\mathrm{H}{\rightarrow}\gamma\gamma}}
+\newcommand{\gggg}{\ensuremath{\mathrm{gg}{\rightarrow}\gamma\gamma}}
+\newcommand{\ggggb}{\ensuremath{\mathrm{gg}{\rightarrow}\gamma\gamma,\mathrm{bkg}}}
+\newcommand{\ggb}{\ensuremath{\gamma\gamma,\mathrm{QCD}}}
+
+\newcommand{\myy}{\ensuremath{\mathrm{m}_{\gamma\gamma}}}
+
+\newcommand{\qnit}{\ensuremath{\mathrm{q}}}
+\newcommand{\bnit}{\ensuremath{\mathrm{b}}}
+\newcommand{\unit}{\ensuremath{\mathrm{u}}}
+\newcommand{\dnit}{\ensuremath{\mathrm{d}}}
+
+
+\newcommand{\Ac}{\ensuremath{\mathrm{A}_{\mathrm{C}}}}
+\newcommand{\nnit}{\ensuremath{\mathrm{N}}}
+
+
+\newcommand{\Hbb}{$\mathrm{H} \rightarrow \mathrm{b\bbar}$}
+\newcommand{\Hcc}{$\mathrm{H} \rightarrow c\cbar$}
+\newcommand{\Hccg}{$\mathrm{H} \rightarrow c\bar{c}\gamma$}
+\newcommand{\Hccgb}{$\bm{H \rightarrow c\bar{c}\gamma}$}
+\newcommand{\Hss}{$\mathrm{H} \rightarrow s\bar{s}$}
+\newcommand{\Hssb}{$\bm{H \rightarrow s\bar{s}}$}
+
+\newcommand{\Hbr}{$\mathrm{BR}^{\mathrm{SM}}$}
+\newcommand{\Hssbr}{$\mathrm{BR}^{\mathrm{SM}}(H \rightarrow s\bar{s})$}
+\newcommand{\Hccbr}{$\mathrm{BR}^{\mathrm{SM}}(H \rightarrow c\bar{c})$}
+\newcommand{\Hbbbr}{$\mathrm{BR}^{\mathrm{SM}}(H \rightarrow b\bar{b})$}
+\newcommand{\micron}{\ensuremath{{\mu{\mathrm m}}}\xspace}
+
+\newcommand{\ggF}{\ensuremath{\mathrm{ggF}}}
+\newcommand{\ZH}{\ensuremath{\mathrm{ZH}}}
+\newcommand{\WH}{\ensuremath{\mathrm{WH}}}
+\newcommand{\VH}{\ensuremath{\mathrm{VH}}}
+
+%___________________________________________________
+% experiments
+\newcommand{\run}[1]{Run{#1}}
+\newcommand{\atlas}{ATLAS\xspace}
+\newcommand{\tevatron}{Tevatron\xspace}
+\newcommand{\CMS}{CMS\xspace}
+%___________________________________________________
+%MC generators
+\newcommand{\mcatnlo}{\textsc{MC@NLO}\xspace}
+\newcommand{\herwig}{\textsc{Herwig}\xspace}
+\newcommand{\jimmy}{\textsc{Jimmy}\xspace}
+\newcommand{\pythia}{\textsc{Pythia}\xspace}
+\newcommand{\powheg}{\textsc{POWHEG}-hvq\xspace}
+\newcommand{\tauola}{\textsc{Tauola}\xspace}
+\newcommand{\photos}{\textsc{Photos}\xspace}
+\newcommand{\acermc}{\textsc{AcerMC}\xspace}
+\newcommand{\alpgen}{\textsc{Alpgen}\xspace}
+\newcommand{\sherpa}{\textsc{Sherpa}\xspace}
+\newcommand{\madgraph}{\textsc{MadGraph\_aMC@NLO}\xspace}
+\newcommand{\rivet}{\textsc{Rivet}\xspace}
+%---
+
+\newcommand{\LamFSR}  {\ensuremath{\Lambda_{\mathrm{FSR}}}\xspace}
+\newcommand{\LamISR}  {\ensuremath{\Lambda_{\mathrm{ISR}}}\xspace}
+%---
+% PDFs
+\newcommand\MSbar{\hbox{$\overline{\mathrm{MS}}$}}
+%----
+% General
+\newcommand\pp{\ensuremath{p-p}\xspace}
+\newcommand\ppbar{\ensuremath{p-\bar{p}}\xspace}
+\newcommand{\LamQCD}  {\ensuremath{\Lambda_{\mathrm{QCD}}}\xspace}
+\newcommand{\shat}  {\ensuremath{\hat{s}}\xspace}
+%--
+%top
+\newcommand{\sigmaTeV}{$\sigma _{\sqrt{s}=1.96\TeV}$}
+\newcommand{\sigmaLHC}{$\sigma _{\sqrt{s}=10\TeV}$}
+%--
+% detector and stuff:
+\def\ifb{\ifmmode {\mathrm{\ fb}^{-1}\xspace}\else
+                   \ensuremath{\mathrm{\ fb}^{-1}}\xspace \fi}
+
+\def\ipb{\ifmmode {\mathrm{\ pb}^{-1}\xspace}\else
+                   \ensuremath{\mathrm{\ pb}^{-1}}\xspace \fi}
+
+\def\fb{\ifmmode {\mathrm{\ fb}\xspace}\else
+                   \ensuremath{\mathrm{\ fb}}\xspace \fi}
+
+\def\pb{\ifmmode {\mathrm{\ pb}\xspace}\else
+                   \ensuremath{\mathrm{\ pb}}\xspace \fi}
+
+\newcommand{\MET}{\ensuremath{\mathrm{\not\!\!E_T}}}
+\let\met=\MET
+
+\newcommand{\METconssearch}{\ensuremath{E_{\mathrm{T}}^{\mathrm{miss}}}}
+\let\metconssearch=\METconssearch
+
+\newcommand{\lumi}{\ensuremath{{\cal L}}\xspace}
+\newcommand{\ilumi}{\ensuremath{{\cal L}_{\mathrm{int}}}\xspace}
+%___________________________________________________
+% latex shortcuts from pythia manual:
+        
+\def\bea{\begin{eqnarray}}
+\def\eea{\end{eqnarray}}
+
+%---------------------------------------------------
+% ttbar:
+\newcommand\ggtott{\ensuremath{gg\rightarrow t\bar{t}}}
+\newcommand\ggtottg{\ensuremath{gg\rightarrow t\bar{t}g}}
+\newcommand\qqtott{\ensuremath{q\bar{q}\rightarrow t\bar{t}}}
+\newcommand\qqtottg{\ensuremath{q\bar{q}\rightarrow t\bar{t}g}}
+
+\newcommand\semilpart{\ensuremath{\ttbar\ra \W\W\bbbar\ra(\l\nu)(\qqbar)\bbbar}\xspace}
+
+\newcommand\semiljets{\ensuremath{\ttbar \ra \W\W\bbbar\ra(\l \nu)(\qqbar)\bbbar\ra (\l \nu) (\j\j)\jb\jbbar}\xspace}
+
+\newcommand\dilpart{\ensuremath{\ttbar\ra \W\W\bbbar\ra(\l\nu)(\l\nu)\bbbar}\xspace}
+
+\newcommand\diljets{\ensuremath{\ttbar \ra \W\W\bbbar\ra(\l \nu)(\l\nu)\bbbar\ra (\l\nu) (\l\nu)\jb\jbbar}\xspace}
+
+\newcommand\hadpart{\ensuremath{\ttbar\ra \W\W\bbbar\ra(\qqbar)(\qqbar)\bbbar}\xspace}
+
+\newcommand\hadjets{\ensuremath{\ttbar \ra \W\W\bbbar\ra(\qqbar)(\qqbar)\bbbar\ra (\j\j) (\j\j)\jb\jbbar}\xspace}
+
+\newcommand\musemilpart{\ensuremath{\ttbar\ra \W\W\bbbar\ra(\mu\nu)(\qqbar)\bbbar}\xspace}
+
+\newcommand\musemiljets{\ensuremath{\ttbar \ra \W\W\bbbar\ra(\mu \nu)(\qqbar)\bbbar\ra (\mu \nu) (\j\j)\jb\jbbar}\xspace}
+
+\newcommand\hadtoppart{\ensuremath{\t\ra\W\b\ra(\qqbar)\b}\xspace}
+
+\newcommand\hadtopjets{\ensuremath{\t\ra\W\b\ra(\qqbar)\b\ra(\j\j)\jb}\xspace}
+
+\newcommand\hadtbarpart{\ensuremath{\tbar\ra\W\bbar\ra(\qqbar)\bbar}\xspace}
+
+\newcommand\hadtbarjets{\ensuremath{\tbar\ra\W\bbar\ra(\qqbar)\bbar\ra(\j\j)\jbbar}\xspace}
+
+%___________________________________________________
+%
+\chardef\letterchar=11
+\chardef\otherchar=12
+\chardef\eolinechar=5
+%
+% +--------------------------------------------------------------------+
+% |                                                                    |
+% |  Here I define useful symbols for use in or out of math mode.      |
+% |                                                                    |
+% +--------------------------------------------------------------------+
+%
+\def\ra{\ensuremath{\rightarrow}}%  "GOES TO" arrow.
+\def\la{\ensuremath{\leftarrow}}%   "GETS" arrow.
+\let\rarrow=\ra
+\let\larrow=\la
+%\def\lapprox{\ensuremath{\sim\kern-1em\raise 0.65ex\hbox{$<$}}}%  Or use \lsim
+%\def\rapprox{\ensuremath{\sim\kern-1em\raise 0.65ex\hbox{$>$}}}%  and \rsim.
+\newcommand{\lapprox}{\raisebox{-0.8mm}%
+{\hspace{1mm}$\stackrel{<}{\sim}$\hspace{1mm}}}
+\newcommand{\rapprox}{\raisebox{-0.8mm}%
+{\hspace{1mm}$\stackrel{>}{\sim}$\hspace{1mm}}}
+
+
+\def\gam{\ensuremath{\gamma}}%
+\def\rts {\ensuremath{\sqrt{s}}}
+\def\stat{\mbox{$\;$stat.}}
+\def\syst{\mbox{$\;$syst.}}
+\def\ilumiunc {\mbox{$\;$lumi.}}
+
+\def\mt{\ensuremath{\mathrm{m}_{t}}\xspace}%
+\def\Mt{\ensuremath{\mathrm{m}_{t}}\xspace}%
+\def\mW{\ensuremath{\mathrm{m}_{W}}\xspace}%
+\def\MW{\ensuremath{\mathrm{m}_{W}}\xspace}%
+\def\mb{\ensuremath{\mathrm{m}_{b}}\xspace}%
+\def\Mb{\ensuremath{\mathrm{m}_{b}}\xspace}%
+
+\renewcommand{\a}{\ensuremath{a}\xspace}
+\renewcommand{\b}{\ensuremath{b}\xspace}
+\newcommand{\B}{\ensuremath{B}\xspace}
+\renewcommand{\c}{\ensuremath{c}\xspace}
+\renewcommand{\d}{\ensuremath{d}\xspace}
+\renewcommand{\l}{\ensuremath{l}\xspace}
+
+\newcommand{\f}{\ensuremath{f}\xspace}
+\newcommand{\g}{\ensuremath{g}\xspace}
+\newcommand{\lrm}{\ensuremath{l}\xspace}
+\newcommand{\p}{\ensuremath{p}\xspace}
+\newcommand{\q}{\ensuremath{q}\xspace}
+\newcommand{\s}{\ensuremath{s}\xspace}
+\renewcommand{\t}{\ensuremath{t}\xspace}
+\renewcommand{\u}{\ensuremath{u}\xspace}
+\newcommand{\W}{\ensuremath{W}\xspace}
+\newcommand{\Z}{\ensuremath{Z}\xspace}
+\renewcommand{\H}{\ensuremath{H}\xspace}
+\def\antibar#1{\ensuremath{#1\bar{#1}\xspace}}%
+\def\tbar{\ensuremath{\bar{t}}\xspace}
+\def\ccbar{\antibar{c}\xspace}%
+\def\ccbar{\antibar{b}\xspace}%
+%\def\ttbar{\antibar{t}\xspace}%
+\def\ttbar{\ensuremath{\mathrm{t}\overline{\mathrm{t}}}}%
+\def\tthf{\ensuremath{\ttbar+QQ}\xspace}%
+\def\bbar{\ensuremath{\bar{b}}\xspace}
+\def\bbbar{\antibar{b}\xspace}%
+\def\cbar{\ensuremath{\bar{c}}\xspace}
+\def\ccbar{\antibar{c}\xspace}%
+\def\sbar{\ensuremath{\bar{s}}\xspace}
+\def\ssbar{\antibar{s}\xspace}%
+\def\ubar{\ensuremath{\bar{u}}\xspace}
+\def\uubar{\antibar{u}\xspace}%
+\def\dbar{\ensuremath{\bar{d}}\xspace}
+\def\ddbar{\antibar{d}\xspace}%
+\def\fbar{\ensuremath{\bar{f}}\xspace}
+\def\ffbar{\antibar{f}\xspace}%
+\def\qbar{\ensuremath{\bar{\mathrm{q}}}\xspace}
+\def\qqbar{\antibar{\mathrm{q}}\xspace}%
+\def\nbar{\ensuremath{\bar{\nu}}\xspace}
+\def\nnbar{\antibar{\nu}\xspace}%
+%\def\gg{\ensuremath{gg}\xspace}%
+\def\jpsi{\ensuremath{J/\psi}\xspace}%
+\def\ttH{\ensuremath{\ttbar \mathrm{H}}\xspace}%
+\def\tH{\ensuremath{\mathrm{tH}}\xspace}%
+\def\gamgam{\ensuremath{\gamma\gamma}}%
+\def\gamgamb{\ensuremath{\bm{\gamma\gamma}}}%
+\def\HHbbgamgam{\ensuremath{HH{\rightarrow}\bbbar\gamgam}}%
+\def\Hgamgam{\ensuremath{\higgs{\rightarrow}\gamgam}}%
+\def\Hgamgamb{\ensuremath{\bm{\higgs{\rightarrow}\gamgam}}}%
+\def\ttgamma{\ensuremath{\ttbar \gamma}\xspace}%
+
+\renewcommand{\j}{\ensuremath{\mathrm{j}}\xspace}
+\newcommand{\jb}{\ensuremath{\mathrm{j_{\,\b}}}\xspace}
+\newcommand{\jbbar}{\ensuremath{\mathrm{j_{\,\bbar}}}\xspace}
+
+\def\alphas{\hbox{$\alpha_{\mathrm{S}}$}}
+\def\NF{\hbox{$N_{\mathrm{F}}$}}
+\def\NC{\hbox{$N_{\mathrm{C}}$}}
+\def\CF{\hbox{$C_{\mathrm{F}}$}}
+\def\CA{\hbox{$C_{\mathrm{A}}$}}
+\def\TF{\hbox{$T_{\mathrm{F}}$}}
+\def\Lms{\hbox{$\Lambda_{\overline{\mathrm{MS}}}$}}
+\def\Lmsfive{\hbox{$\Lambda^{(5)}_{\overline{\mathrm{MS}}}$}}
+\def\KT{\hbox{$k_{\perp}$}} 
+
+\def\alphaQED{\hbox{$\alpha_{\mathrm{QED}}$}}
+
+\def\Vcb{\ensuremath{\vert V_{cb} \vert}}
+\def\Vub{\ensuremath{\vert V_{ub} \vert}}
+\def\Vtd{\ensuremath{\vert V_{td} \vert}}
+\def\Vts{\ensuremath{\vert V_{ts} \vert}}
+\def\Vtb{\ensuremath{\vert V_{tb} \vert}}
+\def\Vcs{\ensuremath{\vert V_{cs} \vert}}
+\def\Vud{\ensuremath{\vert V_{ud} \vert}}
+\def\Vus{\ensuremath{\vert V_{us} \vert}}
+\def\Vcd{\ensuremath{\vert V_{cd} \vert}}
+\def\VQq{\ensuremath{\vert V_{Qq} \vert}}
+
+\def\epm{\ensuremath{e^{\pm}}\xspace}
+\def\mupm{\ensuremath{e^{\pm}}\xspace}
+
+
+\def\et{\ifmmode{\mathrm{E_T}\xspace}\else
+  {\ensuremath{\mathrm{E_T}}\xspace}\fi}
+
+\let\eT=\et
+\let\ET=\et
+\let\Et=\et
+
+\def\begL{10$^{31}$~cm$^{-2}$~s$^{-1}$  }
+\def\lowL{10$^{33}$~cm$^{-2}$~s$^{-1}$ }
+\def\highL{10$^{34}$~cm$^{-2}$~s$^{-1}$ }
+
+\newcommand{\Rcone}{\ensuremath{R_{\mathit{cone}}}}%
+
+\def\TeV{\ifmmode {\mathrm{\ Te\kern -0.1em V}}\else
+                   \xspace\textrm{Te\kern -0.1em V}\xspace \fi }%
+\def\GeV{\ifmmode {\mathrm{\ Ge\kern -0.1em V}}\else
+                   \xspace\textrm{Ge\kern -0.1em V}\xspace \fi }%
+\def\MeV{\ifmmode {\mathrm{\ Me\kern -0.1em V}}\else
+                   \xspace\textrm{Me\kern -0.1em V}\xspace \fi }%
+\def\keV{\ifmmode {\mathrm{\ ke\kern -0.1em V}}\else
+                   \xspace\textrm{ke\kern -0.1em V}\xspace \fi }%
+\def\eV{\ifmmode  {\mathrm{\ e\kern -0.1em V}}\else
+                   \xspace\textrm{e\kern -0.1em V}\xspace \fi }%
+
+%%\def\stat{\ifmmode {\mathrm{\ stat}}\else
+%%                   \xspace\textrm{stat}\xspace \fi }%
+%%\def\syst{\ifmmode {\mathrm{\ syst}}\else
+%%                   \xspace\textrm{syst}\xspace \fi }%
+
+%============================================
+
+\newcommand{\sigtt}{\ensuremath{\sigma_{\ttbar}}\xspace}
+\newcommand{\wjets}{\ensuremath{W\!+\!\mathrm{jets}}\xspace}
+\newcommand{\zjets}{\ensuremath{Z\!+\!\mathrm{jets}}\xspace}
+\newcommand{\ej}{\ensuremath{e+\mathrm{jets}}\xspace}
+\newcommand{\mj}{\ensuremath{\mu+\mathrm{jets}}\xspace}
+\newcommand{\njets}{\ensuremath{N_{\mathrm{jets}}}\xspace}
+\newcommand{\expA}{\ensuremath{\exp[-8\times A]}\xspace}
+\newcommand{\Http}{\ensuremath{H_{\mathrm{T,3p}}}\xspace}
+\newcommand{\expH}{\ensuremath{\exp[-4\times\Http]}\xspace}
+\newcommand{\etal}{\ensuremath{\eta^{\ell}}\xspace}
+\newcommand{\absetal}{\ensuremath{|\etal|}\xspace}
+\newcommand{\wSV}{\ensuremath{w_{\mathrm{SVO}}}\xspace}
+\newcommand{\wSVmean}{\ensuremath{\overline{w}_{\mathrm{SVO}}}\xspace}
+\newcommand{\jprob}{\texttt{JetProb}\xspace}
+\newcommand{\wJP}{\ensuremath{w_{\mathrm{JP}}}\xspace}
+\newcommand{\wJPmean}{\ensuremath{\overline{w}_{\mathrm{JP}}}\xspace}
+
+%============================================
+
+
+\let\tev=\TeV
+\let\gev=\GeV
+\let\mev=\MeV
+\let\kev=\keV
+\let\ev=\eV
+
+\def\Ecm{\ensuremath{\mathrm{E_{cm}}}}%
+
+\newcommand{\musemil}{muon channel semi-leptonic\xspace}
+
+\newcommand{\thlw}{\ensuremath{\theta^*}\xspace}
