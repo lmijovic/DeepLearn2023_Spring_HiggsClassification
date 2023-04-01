@@ -78,6 +78,7 @@ Finally, you will create an adversarial network, and compare it's classification
 
 [3] Chase Shimmin et al, Decorrelated Jet Substructure Tagging using Adversarial Neural Networks, https://arxiv.org/abs/1703.03507
 
+[4] Andeas Sogaard's notebook on Adversarial neural networks: https://github.com/asogaard/ep2mlf/tree/master/01-adversarial
 
 ## Credits
 
