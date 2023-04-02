@@ -1,6 +1,15 @@
 """
+adapted from code by A. Sogaard, J. Curran, K. Farmer
 
-Gaussian Mixture model helpers 
+Gaussian Mixture Model helpers 
+
+The adversary is tasked with guessing myy;
+
+it predicts a myy probability density function (pdf),
+which is compared to the actual myy.
+
+The pdf is formed as a sum of Gaussian distributions,
+this module contains helpers to construct it. 
 
 """
 

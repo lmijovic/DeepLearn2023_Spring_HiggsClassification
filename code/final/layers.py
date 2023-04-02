@@ -1,6 +1,10 @@
 """
 
-adapted from code by A. Sogaard, J. Curran, K. Farmer 
+adapted from code by A. Sogaard, J. Curran, K. Farmer
+
+Unconventional Keras layers, needed by the ANN:
+- gradient reversal layer, connecting classifier and adversary networks
+- adversary posterior layer to asses if the adversary can guess the myy 
 
 """
 
@@ -71,7 +75,7 @@ class PosteriorLayer(Layer):
 
         Returns
         -------
-        Custom layer, models the posterior probability distribution for the diphoton mass using
+        Custom layer, models the posterior probability distribution for the myy using
         a Gaussian mixture model (GMM)
 
         '''
