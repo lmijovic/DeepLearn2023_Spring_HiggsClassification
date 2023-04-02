@@ -1,6 +1,6 @@
 """
 
-adapted from code by A. Sogaard & K. Farmer 
+adapted from code by A. Sogaard, J. Curran, K. Farmer 
 
 """
 
