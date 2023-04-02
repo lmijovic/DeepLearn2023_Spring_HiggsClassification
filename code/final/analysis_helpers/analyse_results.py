@@ -34,7 +34,7 @@ def get_w(p_arr):
 #np.savetxt('discriminant.csv', res.T, delimiter = ',')
 
 cols=['myy','y_pred','y']
-data=pd.read_csv('clf_standalone_results.csv',names=cols)
+data=pd.read_csv('../clf_standalone_results.csv',names=cols)
 sig=data[data['y']==1]
 bkg=data[data['y']==0]
 

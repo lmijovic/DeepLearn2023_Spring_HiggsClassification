@@ -27,6 +27,7 @@ Please aim to have ~ 1GB of free disk-space available, and download the input da
  
 https://cern.ch/dl23data
 
+The data is derived from ATLAS H->yy CERN OpenData sample DOI:10.7483/OPENDATA.ATLAS.B5BJ.3SGS.
 
 ### Test your environment 
 
@@ -56,6 +57,14 @@ python test.py
 ```
 
 If you get no errors (ignore tensorflow warnings), and you get non-empty output files: clf_results.csv, ANN_results.csv, all is working fine.
+
+## Backup: binder
+
+The classification requires a large amount of data, and should therefore be done on the local machine to get good results. 
+
+Backup, binder running on small statistics: 
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/lmijovic/test_binder_dl23/HEAD)
 
 
 ## Syllabus 

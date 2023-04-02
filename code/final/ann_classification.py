@@ -112,7 +112,7 @@ X_test = normalize.fit_transform(X_test)
 # Number of samples, features, epochs & batch size
 num_samples = X_train.shape[0]
 num_feat = X_train.shape[1]
-num_epochs = 10
+num_epochs = 100
 batch = 5000
 
 #------------------------------------------------------------------------
