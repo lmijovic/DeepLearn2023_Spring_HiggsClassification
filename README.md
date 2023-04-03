@@ -78,6 +78,16 @@ This lecture will provide you with hands-on knowledge of manipulating neural net
 - Lecture3: Putting it all together: event classification with adversarial neural network
 Finally, you will create an adversarial network, and compare it's classification performance to the fully connected network.
 
+## Links
+
+- Lecture1: 
+Please upload results to: https://cern.ch/dl23lect1 
+Please upload any feedback to: https://cern.ch/l1feed
+
+- Lecture2:
+
+- Lecture3: 
+
 
 ## References 
 
