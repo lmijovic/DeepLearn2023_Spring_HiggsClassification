@@ -81,8 +81,8 @@ Finally, you will create an adversarial network, and compare it's classification
 ## Links
 
 - Lecture1: 
-Please upload results to: https://cern.ch/dl23lect1 
-Please upload any feedback to: https://cern.ch/l1feed
+* Please upload results to: https://cern.ch/dl23lect1
+* Please upload any feedback to: https://cern.ch/l1feed
 
 - Lecture2:
 
