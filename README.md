@@ -90,6 +90,7 @@ Finally, you will create an adversarial network, and compare it's classification
 * Please upload any feedback to: https://cern.ch/lect2feed
 
 - Lecture3: 
+* 2M event run data: https://cern.ch/dl23solutions
 * Please upload results to: https://cern.ch/lec3results
 * Please upload any feedback to: https://cern.ch/lec3results
 
