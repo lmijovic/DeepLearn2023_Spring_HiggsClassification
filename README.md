@@ -80,19 +80,8 @@ Finally, you will create an adversarial network, and compare it's classification
 
 ## Links
 
-- Lecture1: 
-* Please upload results to: https://cern.ch/dl23lect1
-* Please upload any feedback to: https://cern.ch/l1feed
-
-- Lecture2:
-* Survey1: adversarial network fundamentals https://cern.ch/lect2survey1
-* Survey2: advanced adversarial neural network concepts https://cern.ch/lect2survey2
-* Please upload any feedback to: https://cern.ch/lect2feed
-
 - Lecture3: 
 * 2M event run outputs: https://cern.ch/dl23solutions
-* Please upload results to: https://cern.ch/lec3results
-* Please upload any feedback to: https://cern.ch/lec3results
 
 ## References 
 
