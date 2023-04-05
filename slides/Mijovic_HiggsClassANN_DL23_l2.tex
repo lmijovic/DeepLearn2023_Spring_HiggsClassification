@@ -192,6 +192,19 @@
 }
 
 \begin{frame}
+  \frametitle{\bf Any problems during lecture1?}
+  When running:\\
+  {\tt conda create --name DeepLearn23 --file requirements.txt}\\
+  conda could not resolve the environment. 
+  \begin{figure}
+    \includegraphics[width=0.55\textwidth]{figures/l2/req.png}
+  \end{figure}
+  Solution: remove package versions. Ie {\tt jupyter=1.0.0=py39h06a4308\_7}
+  becomes {\tt jupyter} etc.
+\end{frame}
+
+
+\begin{frame}
   \frametitle{\bf Reminder: Our Challenge}
 
   \adjustbox{valign=t}{\begin{minipage}[c]{0.5\linewidth}
@@ -311,7 +324,24 @@
 \end{frame}
 
 \begin{frame}
-  \frametitle{\bf Di-photon mass decorrelation}
+  \frametitle{\bf Gaussian Mixture Model}
+  \begin{itemize}
+  \item \textcolor{EDBRed}{Adversary} tries to guess $\myy$ from classifier output.
+  \item If possible, the \textcolor{EDBBlue}{classifier} is penalised.
+  \end{itemize}
+  {\bf Q:} How do we know if the adversary is guessing the myy?\\
+  {\bf A:} Gaussian Mixture Model (GMM).
+  \begin{figure}
+    \includegraphics[width=0.49\textwidth]{figures/l2/and_adv.png}
+    \includegraphics[width=0.49\textwidth]{figures/l2/gmm.png}
+  \end{figure}
+  \blfootnote{Image credits: A. Sogaard, and
+    \href{http://dx.doi.org/10.1016/j.ultrasmedbio.2019.01.018}{Ultrasound in
+      Medicine \& Biology 45 (5) (2019).}}
+\end{frame}
+
+\begin{frame}
+  \frametitle{\bf Mass decorrelation: gradient reversal}
   Can we design classification which does not sculpt \myy{}?
   \begin{itemize}
   \item \textcolor{EDBRed}{Adversary}: parametrises $d=\myy{}$ conditional on classifier output; $p_{adv}(\myy{}|z).$
@@ -329,7 +359,7 @@
 
 
 \begin{frame}
-  \frametitle{\bf Di-photon mass decorrelation}
+  \frametitle{\bf Mass decorrelation: gradient reversal}
   \begin{itemize}
   \item Both networks trained simultaneously with a loss:
     $$ L = L_{clf}(\textcolor{EDBBlue}{\theta_{clf}})-\lambda L_{adv}(\textcolor{EDBBlue}{\theta_{clf}},\textcolor{EDBRed}{\theta_{adv}}) $$
@@ -362,7 +392,11 @@
   \item Run \href{https://cern.ch/dl23code}{\textcolor{EDBBlue}{git
         repository:}} code/final/ann\_classification.ipynb
   \item Look through the notebook; do you understand how the ANN works?
-  \item Share your understanding in \href{}{\textcolor{EDBBlue}{survey (link)}}.
+  \item Share your understanding:
+    \begin{itemize}
+    \item ANN concepts: \href{https://cern.ch/lect2survey1}{\textcolor{EDBBlue}{https://cern.ch/lect2survey1}}.
+    \item Advanced ANN concepts: \href{https://cern.ch/lect2survey2}{\textcolor{EDBBlue}{https://cern.ch/lect2survey2}}.
+    \end{itemize}      
   \end{itemize}
   \vfill
   {\bf Optional: after lecture:}
@@ -376,6 +410,7 @@
   \item Download the data: \href{https://cern.ch/dl23data}{\textcolor{EDBBlue}{https://cern.ch/dl23data}}
   \item Set up the environment: \href{https://cern.ch/dl23code}{\textcolor{EDBBlue}{https://cern.ch/dl23code}}
   \end{itemize}
+  {\bf Any feedback?} \href{https://cern.ch/lect2feed}{https://cern.ch/lect2feed}
 \end{frame}
 
 
